@@ -3,4 +3,11 @@ name = "ops-tools"
 version = "0.1.0"
 edition = "2024"
 
+[workspace]
+members = ["read-excel"]
+
+[workspace.dependencies]
+"read_excel" = { path = "./read-excel"}
+
 [dependencies]
+calamine = "0.33.0"
