@@ -149,7 +149,7 @@ dependencies = [
 name = "ops-tools"
 version = "0.1.0"
 dependencies = [
- "calamine",
+ "read-excel",
 ]
 
 [[package]]
@@ -183,6 +183,9 @@ dependencies = [
 [[package]]
 name = "read-excel"
 version = "0.1.0"
+dependencies = [
+ "calamine",
+]
 
 [[package]]
 name = "serde"
