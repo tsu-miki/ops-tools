@@ -1,6 +1,6 @@
 use calamine::{DataType, Error, Reader, Xlsx, open_workbook};
 
-pub fn execute(path: String) -> Result<Vec<String>, Error> {
+pub fn get_global_ids_by_revenue(path: String) -> Result<Vec<String>, Error> {
     let mut excel: Xlsx<_> = open_workbook(path)?;
     let worksheet = excel.worksheet_range("企業リスト")?;
     let rows = worksheet.rows();
